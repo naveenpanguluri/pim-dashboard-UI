@@ -1,0 +1,22 @@
+.prod-dp {
+  width: 40px;
+  height: 40px;
+  background-color: #e3e4e8;
+  border-radius: 50%;
+  text-align: center;
+  padding: 6px 0;
+}
+
+.cat-sub-menu {
+  padding: 5px 10px 5px 20px;
+  
+}
+
+.cat-sub-menu:hover {
+  background-color: #F0F0F7;
+  /*color: #e65618 !important;*/
+}
+
+.cat-sub-menu>a:hover {
+  color: #5F696C !important;
+}

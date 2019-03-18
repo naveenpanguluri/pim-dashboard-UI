@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>PIM Dashboard</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css"> -->
+  <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.css">
+  <link href="css/default.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header>
+      <nav class="navbar navbar-expand navbar-light head-bg p-0">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item">
+              <a class="nav-link w-clr" href="#"><i class="fa fa-bell mr-10 fs-20"><span class="badge badge-danger bg-o custom-badge">3</span></i></a>
+            </li> -->
+
+            <li class="nav-item dropdown ml-20 bord-l">
+              <a href="#" class="nav-link dropdown-toggle w-clr bg-trans ddt p-all4" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fal fa-bell mr-10 fs-20"><span class="badge badge-danger bg-o custom-badge">3</span></i>
+          </a>
+              <div class="dropdown-menu drop-m1" aria-labelledby="notifications" id="yourElement">
+                <a class="dropdown-item p-all3 clearfix" href="#"><i class="fal fa-bell mr-20"></i>A new product added to the list<br /><span class="float-right fs-12">2 sec ago</span></a>
+                <a class="dropdown-item p-all3 clearfix" href="#"><i class="fal fa-bell mr-20"></i>A new product added to the list<br /><span class="float-right fs-12">2 sec ago</span></a>
+                <a class="dropdown-item p-all3 clearfix" href="#"><i class="fal fa-bell mr-20"></i>A new product added to the list<br /><span class="float-right fs-12">2 sec ago</span></a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown bord-l">
+              <a href="#" class="nav-link dropdown-toggle w-clr bg-trans p-all4" id="username" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fal fa-user mr-10 fs-20"></i>Username
+          </a>
+              <div class="dropdown-menu drop-m" aria-labelledby="username" id="yourElement1">
+                <a class="dropdown-item p-all3" href="#"><i class="fal fa-user mr-20"></i>Profile</a>
+                <a class="dropdown-item p-all3" href="#"><i class="fal fa-cog mr-20"></i>Account Settings</a>
+                <a class="dropdown-item p-all3" href="#"><i class="fal fa-sign-out mr-20"></i>Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <nav id="sidebar">
+      <!-- Sidebar Header -->
+      <div class="sidebar-header">
+        <div class="logo-derm">
+          <img src="images/logo-dermalogica.svg" class="img-fluid" />
+
+        </div>
+      </div>
+
+      <!-- Sidebar Links -->
+      <ul class="list-unstyled components">
+        <!-- <li class="active"><a href="#"><i class="fa fa-dashboard mr-10"></i>Dashboard</a></li> -->
+        <li class="active">
+          <!-- Link with dropdown items -->
+          <a href="#productsSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fal fa-cube mr-10"></i>Products Database<i class="fa fa-chevron-right float-right fs-12 mtb-10"></i><span class="badge badge-pill fw-500 fs-12 w-clr m-all bg-o float-right">New</span></a>
+          <ul class="collapse list-unstyled" id="productsSubmenu">
+            <li><a href="#" class="p-all2">Products</a></li>
+            <li><a href="#" class="p-all2">Categories</a></li>
+            <li><a href="#" class="p-all2">Attributes</a></li>
+          </ul>
+        </li>
+        <li>
+          <!-- Link with dropdown items -->
+          <a href="#usersSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fal fa-comment-alt mr-10"></i>Review<i class="fa fa-chevron-right float-right fs-12 mtb-10"></i></a>
+          <ul class="collapse list-unstyled" id="usersSubmenu">
+            <li><a href="#" class="p-all2">Categories</a></li>
+            <li><a href="#" class="p-all2">Products</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="#"><i class="fa fa-dashboard mr-10"></i>Reviews</a></li>
+        <li><a href="#"><i class="fa fa-dashboard mr-10"></i>Countries</a></li> -->
+        <li><a href="#"><i class="fal fa-sitemap mr-10"></i>Applications</a></li>
+
+        <li>
+          <!-- Link with dropdown items -->
+          <a href="#attrSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fal fa-cog mr-10"></i>System<i class="fa fa-chevron-right float-right fs-12 mtb-10"></i><span class="badge badge-pill fw-500 fs-12 w-clr m-all bg-blue float-right">New</span></a>
+          <ul class="collapse list-unstyled" id="attrSubmenu">
+            <li><a href="#" class="p-all2">Countries</a></li>
+            <li><a href="#" class="p-all2">Users</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- Total body content should be place inside the id="content" div -->
+    <div id="content">
+
+      <section class="ptb-15">
+        <div class="row m-0">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h3 class="m-0">Products </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="row m-0">
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <div class="prods-box bg-w">
+
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+            <div class="prods-box bg-w">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="m-all2">
+        <div class="row m-0 bg-w">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="ptb-15 clearfix">
+              <button type="button" class="btn btn-outline-secondary pull-left">Add New</button>
+              <div class="input-group col-md-4 pull-right">
+                <input class="form-control py-2 border-right-0 border" type="search" placeholder="search" id="example-search-input">
+                <span class="input-group-append">
+                <button class="btn btn-outline-secondary border-left-0 border" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </div>
+
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+    $('#yourElement').addClass('animated slideInDown');
+    $('#yourElement1').addClass('animated slideInDown1');
+  </script>
+
+
+</body>
+
+</html>
